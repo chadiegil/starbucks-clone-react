@@ -11,28 +11,16 @@ import Twitter from "./asset/twitter.png";
 import Instagram from "./asset/instagram.png";
 import { useState } from "react";
 function App() {
-  const [starBoxImg, setStarBoxImg] = useState(null);
-
-  const Images = [
-    {
-      img1: Img1,
-    },
-    {
-      img2: Img2,
-    },
-    {
-      img3: Img3,
-    },
-  ];
-
-  const imgSlider = (anything) => {
-    // document.querySelector(".starBucks").src = anything;
-  };
+  const [starBoxImg, setStarBoxImg] = useState("/src/asset/img1.png");
+  const [backgroundCircle, setBackgroundCircle] = useState(null);
 
   return (
     <div className="App">
       <section>
-        <div className="circle"></div>
+        <div
+          className="circle"
+          style={{ backgroundColor: backgroundCircle }}
+        ></div>
         <header>
           <a href="#" className="logo">
             <img src={Logo} alt="logo" />
@@ -70,13 +58,8 @@ function App() {
             <a href="#">Buy Now</a>
           </div>
           <div className="imgBox">
-            {starBoxImg && (
-              <img
-                src={`${starBoxImg}`}
-                className="starBucks"
-                alt="starbucks"
-              />
-            )}
+            {console.log(starBoxImg)}
+            <img src={`${starBoxImg}`} className="starBucks" alt="starbucks" />
           </div>
         </div>
         <ul className="thumb">
@@ -85,16 +68,30 @@ function App() {
               src={Thumb1}
               alt="thumb"
               onClick={() => {
-                setStarBoxImg(`${Img1}}`);
-                alert(`${Img1}`);
+                setStarBoxImg(`${Img1}`);
+                setBackgroundCircle("#017143");
               }}
             />
           </li>
           <li>
-            <img src={Thumb2} alt="thumb" />
+            <img
+              src={Thumb2}
+              alt="thumb"
+              onClick={() => {
+                setStarBoxImg(`${Img2}`);
+                setBackgroundCircle("#eb7495");
+              }}
+            />
           </li>
           <li>
-            <img src={Thumb3} alt="thumb" />
+            <img
+              src={Thumb3}
+              alt="thumb"
+              onClick={() => {
+                setStarBoxImg(`${Img3}`);
+                setBackgroundCircle("#d752b1");
+              }}
+            />
           </li>
         </ul>
         <ul className="sci">
