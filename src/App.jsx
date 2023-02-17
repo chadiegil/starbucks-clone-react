@@ -58,8 +58,13 @@ function App() {
             <a href="#">Buy Now</a>
           </div>
           <div className="imgBox">
-            {console.log(starBoxImg)}
-            <img src={`${starBoxImg}`} className="starBucks" alt="starbucks" />
+            {starBoxImg && (
+              <img
+                src={`${starBoxImg}`}
+                className="starBucks"
+                alt="starbucks"
+              />
+            )}
           </div>
         </div>
         <ul className="thumb">
