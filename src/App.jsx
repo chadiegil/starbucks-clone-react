@@ -11,7 +11,7 @@ import Twitter from "./asset/twitter.png";
 import Instagram from "./asset/instagram.png";
 import { useState } from "react";
 function App() {
-  const [starBoxImg, setStarBoxImg] = useState("/src/asset/img1.png");
+  const [starBoxImg, setStarBoxImg] = useState(Img1);
   const [backgroundCircle, setBackgroundCircle] = useState(null);
 
   return (
