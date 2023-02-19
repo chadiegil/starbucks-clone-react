@@ -53,7 +53,7 @@ function App() {
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
               dolore autem molestiae, tempore nemo quos quidem voluptatibus in
               deleniti ducimus magnam architecto iste delectus, veniam ipsam
-              voluptate enim deserunt nobis odit impedit ut eos. Repellat
+              voluptate enim deserunt nobis odit impedit ut eos. Repellat.
             </p>
             <a href="#">Buy Now</a>
           </div>
